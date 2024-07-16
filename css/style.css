@@ -1,0 +1,201 @@
+/* # Front-end Style Guide 
+
+## Layout 
+
+The designs were created to the following widths: 
+- Mobile: 375px 
+- Desktop: 1440px 
+
+## Colors 
+
+### Primary 
+- Light red: hsl(0, 100%, 67%) 
+- Orangey yellow: hsl(39, 100%, 56%) 
+- Green teal: hsl(166, 100%, 37%) 
+- Cobalt blue: hsl(234, 85%, 45%) 
+
+## Gradients 
+- Light slate blue (background): hsl(252, 100%, 67%) - Light royal blue (background): hsl(241, 81%, 54%) 
+- Violet blue (circle): hsla(256, 72%, 46%, 1) 
+- Persian blue (circle): hsla(241, 72%, 46%, 0) 
+
+### Neutral 
+- White: hsl(0, 0%, 100%) 
+- Pale blue: hsl(221, 100%, 96%) 
+- Light lavender: hsl(241, 100%, 89%) 
+- Dark gray blue: hsl(224, 30%, 27%) 
+
+### Notes Use transparency to get the colour variations necessary to match the design. 
+Hint: look into using `hsla()`. 
+
+## Typography 
+
+### Body Copy 
+- Font size (paragraphs): 18px 
+
+### Font 
+- Family: [Hanken Grotesk](https: //fonts.google.com/specimen/Hanken+Grotesk)
+  - Weights: 500, 700, 800 */
+
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1.8rem;
+  background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(221, 100%, 96%));
+  padding-top: 20rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60rem;
+  margin: 0 auto;
+
+}
+
+.first-box {
+  padding: 2.4rem 3.2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(0, 0%, 100%);
+  border-radius: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first-box p {
+  color: hsl(241, 100%, 89%);
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.score p {
+  margin: 0;
+}
+
+.score {
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 15rem;
+  width: 15rem;
+}
+
+.sec-box {
+  padding: 2.4rem 3.2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2.4rem;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 4px 80px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0 1.2rem;
+  border-radius: 0.9rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.reac {
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+}
+
+.mem {
+  color: hsl(39, 100%, 56%);
+  font-weight: 700;
+}
+
+.ver {
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+}
+
+.vis {
+  color: hsl(234, 85%, 45%);
+  font-weight: 700;
+}
+
+li:nth-child(1) {
+  background-color: hsl(0, 100%, 98%);
+}
+
+li:nth-child(2) {
+  background-color: hsl(39, 65%, 98%);
+}
+
+li:nth-child(3) {
+  background-color: hsl(166, 100%, 98%);
+}
+
+li:nth-child(4) {
+  background-color: hsl(234, 85%, 98%);
+  margin-bottom: 0;
+}
+
+button {
+  text-align: center;
+  padding: 1.2rem 4.8rem;
+  border-radius: 50rem;
+  width: 100%;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(221, 100%, 96%);
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+button:hover,
+button:visited {
+  background-color: hsl(241, 81%, 54%);
+  /* color: hsl(224, 30%, 27%); */
+}
+
+.col {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+span {
+  font-weight: 700;
+  color: hsl(0, 1%, 82%);
+}
+
+footer {
+  margin-top: 20rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
